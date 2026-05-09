@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[properties]
+"connector:placeholder"=true
+
+[[mods]]
+modId="sun_fade"
+version="${version}"
+displayName="Sun Fade"
+authors="trinketina"
+description='''Fades the Sun and Moon away when they pass below the horizon, ideal for void worlds'''
+logoFile="assets/sun_fade/icon.png"
+
+[[dependencies.sun_fade]]
+modId="connector"
+mandatory=true
+versionRange="*"
+ordering="NONE"
+side="BOTH"
