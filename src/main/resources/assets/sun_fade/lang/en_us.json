@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.sun_fade.title": "Sun/Moon Fade Config",
+  "text.autoconfig.sun_fade.option.FadeSun.@PrefixText": "Enable/Disable fading for either body",
+  "text.autoconfig.sun_fade.option.SunFadeInStart.@PrefixText": "Modify when the Sun fades in/out",
+  "text.autoconfig.sun_fade.option.MoonFadeInStart.@PrefixText": "Modify when the Moon fades in/out",
+  "text.autoconfig.sun_fade.option.DayLength.@PrefixText": "Changes the length of the day",
+
+  "text.autoconfig.sun_fade.option.DayLength.@Tooltip": "This only needs to be changed if another mod modifies the in-game day's length"
+}

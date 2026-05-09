@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "sun_fade",
+	"version": "${version}",
+	"name": "Sun Fade",
+	"description": "Fades the Sun and Moon away when they pass below the horizon, ideal for void worlds ",
+	"authors": [
+		"Trinketina"
+	],
+	"contact": {
+		"homepage": "https://github.com/Trinketina/Sun-Fade",
+		"sources": "https://github.com/Trinketina/Sun-Fade",
+        "issues": "https://github.com/Trinketina/Sun-Fade/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sun_fade/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+          "com.trinketina.client.FadeSkyClient"
+		]
+	},
+	"mixins": [
+      "sun_fade.mixins.json",
+		{
+			"config": "sun_fade.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": ">=1.21.1",
+		"java": ">=21"
+	}
+}
