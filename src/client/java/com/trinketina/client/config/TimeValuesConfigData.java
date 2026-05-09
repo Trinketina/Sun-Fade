@@ -16,7 +16,7 @@ public class TimeValuesConfigData implements ConfigData {
 
     @ConfigEntry.Gui.CollapsibleObject()
     @ConfigEntry.Gui.Tooltip()
-    public FadeData MoonFadeData = new FadeData(13000, 14000, 22000, 23000);
+    public FadeData MoonFadeData = new FadeData(12000, 13000, 23000, 24000);
 
     @ConfigEntry.Gui.PrefixText()
     @ConfigEntry.Gui.Tooltip()

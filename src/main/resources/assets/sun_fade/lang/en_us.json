@@ -13,7 +13,7 @@
   "text.autoconfig.sun_fade.option.SunFadeData.FadeOutEnd": "What Time to End Fading Out",
 
   "text.autoconfig.sun_fade.option.MoonFadeData.@Tooltip": "0 = 6am \n6000 = 12am \n12000 = 6pm \n18000 = 12pm",
-  "text.autoconfig.sun_fade.option.MoonFadeData": "Modify when the Sun fades in/out (in ticks)",
+  "text.autoconfig.sun_fade.option.MoonFadeData": "Modify when the Moon fades in/out (in ticks)",
   "text.autoconfig.sun_fade.option.MoonFadeData.FadeInStart": "What Time to Start Fading In",
   "text.autoconfig.sun_fade.option.MoonFadeData.FadeInEnd": "What Time to End Fading In",
   "text.autoconfig.sun_fade.option.MoonFadeData.FadeOutStart": "What Time to Start Fading Out",

@@ -39,16 +39,16 @@ public abstract class FadeSkyRenderMixin implements TimeFadeI {
 
     @Inject(method = "renderSky", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/resources/ResourceLocation;)V", ordinal = 1))
     private void onRenderMoon(Matrix4f matrix4f, Matrix4f matrix4f2, float f, Camera camera, boolean bl, Runnable runnable, CallbackInfo ci) {
-        if (!FadeSkyConfig.CONFIG.FadeMoon) //cancel if fade moon is disabled
-            return;
-
-        assert this.level != null;
-
-        long time = this.level.dayTime();
 
         float alpha = 1.0F - this.level.getRainLevel(f);
+        if (FadeSkyConfig.CONFIG.FadeMoon) { //cancel if fade moon is disabled
+            assert this.level != null;
+            long time = this.level.dayTime();
 
-        alpha -= 1 - this.setFadeFromTime(time, FadeSkyConfig.CONFIG.MoonFadeData.FadeInStart, FadeSkyConfig.CONFIG.MoonFadeData.FadeInEnd, FadeSkyConfig.CONFIG.MoonFadeData.FadeOutStart, FadeSkyConfig.CONFIG.MoonFadeData.FadeOutEnd);
+            alpha -= 1 - this.setFadeFromTime(time, FadeSkyConfig.CONFIG.MoonFadeData.FadeInStart, FadeSkyConfig.CONFIG.MoonFadeData.FadeInEnd, FadeSkyConfig.CONFIG.MoonFadeData.FadeOutStart, FadeSkyConfig.CONFIG.MoonFadeData.FadeOutEnd);
+
+        }
+
         alpha = Math.clamp(alpha, 0.0f, 1.0f);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, alpha);
     }
