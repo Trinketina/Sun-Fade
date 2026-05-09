@@ -1,9 +1,25 @@
 {
   "text.autoconfig.sun_fade.title": "Sun/Moon Fade Config",
-  "text.autoconfig.sun_fade.option.FadeSun.@PrefixText": "Enable/Disable fading for either body",
-  "text.autoconfig.sun_fade.option.SunFadeInStart.@PrefixText": "Modify when the Sun fades in/out",
-  "text.autoconfig.sun_fade.option.MoonFadeInStart.@PrefixText": "Modify when the Moon fades in/out",
-  "text.autoconfig.sun_fade.option.DayLength.@PrefixText": "Changes the length of the day",
 
-  "text.autoconfig.sun_fade.option.DayLength.@Tooltip": "This only needs to be changed if another mod modifies the in-game day's length"
+  "text.autoconfig.sun_fade.option.FadeSun.@PrefixText": "Enable/Disable fading for either body",
+  "text.autoconfig.sun_fade.option.FadeSun": "Enable Fading for the Sun",
+  "text.autoconfig.sun_fade.option.FadeMoon": "Enable Fading for the Moon",
+
+  "text.autoconfig.sun_fade.option.SunFadeData.@Tooltip": "0 = 6am \n6000 = 12am \n12000 = 6pm \n18000 = 12pm",
+  "text.autoconfig.sun_fade.option.SunFadeData": "Modify when the Sun fades in/out (in ticks)",
+  "text.autoconfig.sun_fade.option.SunFadeData.FadeInStart": "What Time to Start Fading In",
+  "text.autoconfig.sun_fade.option.SunFadeData.FadeInEnd": "What Time to End Fading In",
+  "text.autoconfig.sun_fade.option.SunFadeData.FadeOutStart": "What Time to Start Fading Out",
+  "text.autoconfig.sun_fade.option.SunFadeData.FadeOutEnd": "What Time to End Fading Out",
+
+  "text.autoconfig.sun_fade.option.MoonFadeData.@Tooltip": "0 = 6am \n6000 = 12am \n12000 = 6pm \n18000 = 12pm",
+  "text.autoconfig.sun_fade.option.MoonFadeData": "Modify when the Sun fades in/out (in ticks)",
+  "text.autoconfig.sun_fade.option.MoonFadeData.FadeInStart": "What Time to Start Fading In",
+  "text.autoconfig.sun_fade.option.MoonFadeData.FadeInEnd": "What Time to End Fading In",
+  "text.autoconfig.sun_fade.option.MoonFadeData.FadeOutStart": "What Time to Start Fading Out",
+  "text.autoconfig.sun_fade.option.MoonFadeData.FadeOutEnd": "What Time to End Fading Out",
+
+  "text.autoconfig.sun_fade.option.DayLength.@PrefixText": "Changes the length of the day ",
+  "text.autoconfig.sun_fade.option.DayLength": "Length of in-game Day (in ticks)",
+  "text.autoconfig.sun_fade.option.DayLength.@Tooltip": "This only needs to be changed if \nanother mod modifies the in-game day's length"
 }

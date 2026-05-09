@@ -1,5 +1,9 @@
 package com.trinketina.client;
 
+import com.trinketina.client.config.FadeSkyConfig;
+import com.trinketina.client.config.TimeValuesConfigData;
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +14,8 @@ public class FadeSkyClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+        LOGGER.info("Initializing Fade Sun/Moon Client");
+        AutoConfig.register(TimeValuesConfigData.class, GsonConfigSerializer::new);
+        FadeSkyConfig.CONFIG = AutoConfig.getConfigHolder(TimeValuesConfigData.class).getConfig();
 	}
 }

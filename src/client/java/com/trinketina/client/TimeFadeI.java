@@ -1,6 +1,7 @@
 package com.trinketina.client;
 
-import com.trinketina.client.config.TimeValuesConfig;
+import com.trinketina.client.config.FadeSkyConfig;
+import com.trinketina.client.config.TimeValuesConfigData;
 
 public interface TimeFadeI {
     default float setFadeFromTime(long dayTime, long fadeInStart, long fadeInEnd, long fadeOutStart, long fadeOutEnd) {
@@ -24,8 +25,8 @@ public interface TimeFadeI {
     }
 
     default float getFade(long time, long start, long end) {
-        long duration = (end - start + TimeValuesConfig.DayLength) % TimeValuesConfig.DayLength;
-        long elapsedTime = (time - start + TimeValuesConfig.DayLength) % TimeValuesConfig.DayLength;
+        long duration = (end - start + FadeSkyConfig.CONFIG.DayLength) % FadeSkyConfig.CONFIG.DayLength;
+        long elapsedTime = (time - start + FadeSkyConfig.CONFIG.DayLength) % FadeSkyConfig.CONFIG.DayLength;
 
         if (duration == 0) {
              return 1.0f;

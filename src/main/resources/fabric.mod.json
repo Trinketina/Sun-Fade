@@ -18,7 +18,10 @@
 	"entrypoints": {
 		"client": [
           "com.trinketina.client.FadeSkyClient"
-		]
+		],
+        "modmenu": [
+          "com.trinketina.client.config.FadeSkyModMenu"
+        ]
 	},
 	"mixins": [
       "sun_fade.mixins.json",
@@ -30,6 +33,7 @@
 	"depends": {
 		"fabricloader": ">=0.18.1",
 		"minecraft": ">=1.21.1",
+        "cloth-config": "*",
 		"java": ">=21"
 	}
 }
